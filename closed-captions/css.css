@@ -1,0 +1,201 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#closed-captions p {
+	opacity: 0;
+    transition: .05s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#closed-captions .on {
+	opacity: 1;
+}
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+.voice1 {
+    font-family: "Brenner Mono Regular";
+    font-size: 1.5em;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+.voice2 {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+.voice4 {
+    font-family: "Brenner Mono Regular";
+    font-size: 1em;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    font-family: Brenner Sans;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    overflow: hidden;
+    transition: background-color 1s linear;
+}
+
+.shake {
+    animation: .10s shake infinite alternate;
+}
+
+@keyframes shake {
+    0%, 30%, 50%, 70%, 100% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+.sound2 {
+    animation: sound2 2s linear;
+}
+
+@keyframes sound2 {
+
+    0%, 100% {
+        box-shadow: inset 0 0 0px rgba(255, 0, 0, 0.5);
+    }
+
+    50%, 80% {
+        box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.5);
+    }
+}
+
+@keyframes sound3 {
+
+    0% {
+        width: 700px;
+        height: 400px;
+        transform:rotate(0deg);
+    }
+
+    40% {
+        width: 700px;
+        height: 400px;
+        transform:rotate(2deg);
+    }
+    
+    60%, 80% {
+        width: 850px;
+        height: 480px;
+        transform:rotate(0deg);
+    }
+    
+    100% {
+        width: 700px;
+        height: 400px;
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes sound9 {
+
+    0% {
+        width: 700px;
+        height: 400px;
+    }
+    
+    100% {
+        width: 1000px;
+        height: 565px;
+    }
+}
+
+@keyframes sound9background {
+
+    0% {
+        background-color: white;
+    }
+    
+    100% {
+        background-color: black;
+    }
+}
+
+.p0, .p1 {
+    color: white;
+}
+
+.p5 {
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+.p6 {
+    padding-top: 60px;
+    font-size: 10px;
+}
+
+.p7 span:nth-of-type(1) {
+    font-family: Brenner Regular Italic;
+}
+
+.p7 span:nth-of-type(2) {
+    font-family: Brenner Regular Italic;
+}
+
+.p7 {
+    font-family: Brenner light Italic;
+    text-shadow: 0 0 4px black;
+}
+
+.p8 span {
+    font-weight: 400;
+}
+
+.p8.on span:nth-of-type(6) {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+
+.p9, .p12, .p15, .p18 {
+    font-size: 5em;
+    padding-right: 4em;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+
+.p10, .p13, .p16, .p19 {
+    font-size: 1em;
+    padding-left: 20em;
+    padding-top: 1em;
+}
+
+.p20, .p23, .p26, .p29, .p34, .p37 {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.p21, .p24, .p27, .p30, .p32, .p35, .p38 {
+    font-size: 1em;
+}
+
+.p42{
+    font-size: 1em;
+} 
+
+.p43 {
+    font-size: 3em;
+}
+
+.p44 {
+    font-size: 5em;
+}
